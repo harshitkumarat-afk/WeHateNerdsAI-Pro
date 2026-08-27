@@ -180,7 +180,7 @@ else:
                             ]
                         )
                     
-                    ai_output = response.choices.message.content
+                    ai_output = response.choices[message].content
                     search_query = user_text if user_text else "Feluda mystery logic riddle solution"
                     google_url = f"https://google.com{urllib.parse.quote_plus(search_query)}"
                     
